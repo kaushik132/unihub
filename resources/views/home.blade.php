@@ -2150,77 +2150,36 @@
     <div class="container">
         <div class="row position-relative">
 
-            <div class="swiper blogsld">
+            <div class="swiper blogsld">                
                 <div class="swiper-wrapper">
+
+                    {{-- start Blog --}}
+                    @foreach($blog as $blogs)
                     <div class="swiper-slide">
                         <div class="explore-our-blogbox mt-3">
                             <div class="text-center"><img
-                                    src="https://www.bbsmituni.com/storage/images/Your paragraph text.jpg"
+                                    src="{{url('uploads/'.$blogs->image)}}"
                                     alt="blog-img" class="blog-main-image"></div>
                             <div class="blog-description     text-start">
-                                <span>How to Choose Your Courses in College</span>
-                                <h5>Learn how to choose the right college courses to match your academic goals,
-                                    interests, and career as...</h5>
+                                <span>{{$blogs->title}}</span>
+                                <h5>{{$blogs->short_des}}</h5>
 
-                                <div class="d-flex  ">
-                                    <div><img src="https://www.bbsmituni.com/assets/images/bbsmitlogo.png"
+                                <div class="d-flex ">
+                                    <div><img src="/assets/images/uhublogo.png"
                                             alt="user" class="user-main-imageshow"></div>
-                                    <div class="user-blog-name">BBSMIT</div>
+                                    <div class="user-blog-name">Unihub</div>
                                 </div>
                             </div>
-                            <a href="https://www.bbsmituni.com/blog/how-to-choose-your-courses-in-college"
+                            <a href="{{url('/')}}"
                                 class="blog_btn_go">
                                 <div class="mt-xl-5"><img src="https://www.bbsmituni.com/assets/images/Link.png"
                                         alt="link-icon" class="img-fluid"></div>
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="explore-our-blogbox mt-3">
-                            <div class="text-center"><img
-                                    src="https://www.bbsmituni.com/storage/images/c82f009e5fa73136fc04e04afe0fe494.jpg"
-                                    alt="blog-img" class="blog-main-image"></div>
-                            <div class="blog-description     text-start">
-                                <span>10 Useful Strategies to Help Students Improve Their Creativity</span>
-                                <h5>Unlock 10 effective strategies to enhance student creativity! From open-ended
-                                    questions to leveragin...</h5>
-
-                                <div class="d-flex  ">
-                                    <div><img src="https://www.bbsmituni.com/assets/images/bbsmitlogo.png"
-                                            alt="user" class="user-main-imageshow"></div>
-                                    <div class="user-blog-name">BBSMIT</div>
-                                </div>
-                            </div>
-                            <a href="https://www.bbsmituni.com/blog/10-useful-strategies-to-help-students-improve-their-creativity"
-                                class="blog_btn_go">
-                                <div class="mt-xl-5"><img src="https://www.bbsmituni.com/assets/images/Link.png"
-                                        alt="link-icon" class="img-fluid"></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="explore-our-blogbox mt-3">
-                            <div class="text-center"><img
-                                    src="https://www.bbsmituni.com/storage/images/BBSMIT 1.jpg" alt="blog-img"
-                                    class="blog-main-image"></div>
-                            <div class="blog-description     text-start">
-                                <span>Choose Your Educational Path: A Guide for New Students</span>
-                                <h5>Navigate the complexities of education and career planning with expert guidance.
-                                    Explore personalize...</h5>
-
-                                <div class="d-flex  ">
-                                    <div><img src="https://www.bbsmituni.com/assets/images/bbsmitlogo.png"
-                                            alt="user" class="user-main-imageshow"></div>
-                                    <div class="user-blog-name">BBSMIT</div>
-                                </div>
-                            </div>
-                            <a href="https://www.bbsmituni.com/blog/choose-your-educational-path-a-guide-for-new-students"
-                                class="blog_btn_go">
-                                <div class="mt-xl-5"><img src="https://www.bbsmituni.com/assets/images/Link.png"
-                                        alt="link-icon" class="img-fluid"></div>
-                            </a>
-                        </div>
-                    </div>
+                    @endforeach
+                   
+                    {{-- end Blog --}}
 
 
                 </div>

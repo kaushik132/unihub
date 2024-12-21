@@ -84,11 +84,14 @@ class BlogController extends AdminController
         $form = new Form(new Blog());
 
         $form->select('category_id', __('Category id'))->options(BlogCategory::pluck('name', 'id'))->default(null)->rules('required');
+        
         $form->text('title', __('Title'));
+        $form->hidden('slug');
         $form->saving(function (Form $form) {
 
             $form->slug = strtolower(preg_replace('/[^A-Za-z0-9-]+/', '-',trim($form->title)));
          });
+
         $form->text('short_des', __('Short des'));
         $form->ckeditor('content', __('Content'));
         $form->image('image', __('Image'));

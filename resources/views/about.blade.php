@@ -114,8 +114,5 @@
 
 
 
-    <a href="{{ action([App\Http\Controllers\HomeController::class, 'contact']) }}">Contact Us</a>
-
-
 
 @endsection

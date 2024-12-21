@@ -93,7 +93,7 @@
     <header class="header-nav">
         <nav class="d-flex justify-content-between">
             <div class="navbar-header-logo">
-                <a href="#"><img src="/assets/images/uhublogo.png" alt="logo" class="img-fluid"></a>
+                <a href="{{url('/')}}"><img src="/assets/images/uhublogo.png" alt="logo" class="img-fluid"></a>
             </div>
 
             <div class="navbar-menu">
