@@ -27,7 +27,7 @@
                                 <a href="#">
                                     <div class="thumb">
                                         <img class="img-fluid" src="{{url('uploads/'.$blogs->image)}}" alt="{{$blogs->alt}}">
-                                        <div class="tag"> English Proficiency Test</div>
+                                        <div class="tag">{{$blogs->blogCategory->name}}</div>
                                         <div class="post_date">
                                             <h2>{{ \Carbon\Carbon::parse($blogs->created_at)->format('d') }}</h2> <span>{{ \Carbon\Carbon::parse($blogs->created_at)->format('F') }}</span></div>
                                     </div>
@@ -66,70 +66,52 @@
                 <div class="main_blog_post_widget_list">
                     <div class="blog_search_widget">
 
-                        <form action="https://www.bbsmituni.com/search-blog" method="GET">
+                        {{-- <form action="https://www.bbsmituni.com/search-blog" method="GET">
                             <div class="input-group mb-3">
                                 <input type="search" class="form-control" name="search" placeholder="Search Here" ria-label="Search" aria-describedby="search-addon" value="" />
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span class="flaticon-magnifying-glass"></span></button>
                                 </div>
                             </div>
-                        </form>
+                        </form> --}}
 
                     </div>
                     <div class="blog_category_widget">
                         <ul class="list-group">
                             <h4 class="title">Category</h4>
 
+
+                            @foreach ($blogCategory as $blogCategorys)
+                                
                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <a href="https://www.bbsmituni.com/blogs/digital-marketing" class="hover-tab-link"> Digital Marketing </a><span class="float-right">28</span>
+                                <a href="{{url('blog/'.$blogCategorys->slug)}}" class="hover-tab-link"> {{$blogCategorys->name}} </a><span class="float-right">{{$blogCategorys->blogs_count}}</span>
                             </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <a href="https://www.bbsmituni.com/blogs/web-design" class="hover-tab-link"> Web Design </a><span class="float-right">2</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <a href="https://www.bbsmituni.com/blogs/web-development" class="hover-tab-link"> Web Development </a><span class="float-right">1</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <a href="https://www.bbsmituni.com/blogs/graphic-design" class="hover-tab-link"> Graphic Design </a><span class="float-right">5</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <a href="https://www.bbsmituni.com/blogs/programming-languages" class="hover-tab-link"> Programming Languages </a><span class="float-right">10</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <a href="https://www.bbsmituni.com/blogs/app-development" class="hover-tab-link"> App Development </a><span class="float-right">1</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <a href="https://www.bbsmituni.com/blogs/english-proficiency-test" class="hover-tab-link"> English Proficiency Test </a><span class="float-right">5</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <a href="https://www.bbsmituni.com/blogs/tips-and-tricks" class="hover-tab-link"> Tips and Tricks </a><span class="float-right">8</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <a href="https://www.bbsmituni.com/blogs/computer-classes" class="hover-tab-link"> Computer Classes </a><span class="float-right">1</span>
-                            </li>
+                            @endforeach
+                         
+                          
+                           
+                           
+                           
+                           
+                          
+                         
 
                         </ul>
                     </div>
                     <div class="blog_recent_post_widget media_widget">
                         <h4 class="title">Recent Posts</h4>
-                        <div class="media">
-                            <div class="hover-tab-link">
-                                <h5 class="mt-0 post_title"> <a href="https://www.bbsmituni.com/blog/8-easy-ways-to-become-excellent-at-spoken-english">8 Easy Ways to Become Excellent at Spoken English  </a></h5>
-                                <a href="#">November 30 2024.</a>
+                      
+                     @foreach ($ressentList as $ressentLists)
+                         
+                     <div class="media">
+                         <div class="hover-tab-link">
+                             <h5 class="mt-0 post_title"> <a href="{{url('blog-details/'.$ressentLists->slug)}}">{{$ressentLists->title}}</a></h5>
+                             <a href="#">{{date('F d Y',strtotime($ressentLists->created_at))}}.</a>
                             </div>
                         </div>
-                        <div class="media">
-                            <div class="hover-tab-link">
-                                <h5 class="mt-0 post_title"> <a href="https://www.bbsmituni.com/blog/how-to-choose-your-courses-in-college">How to Choose Your Courses in College  </a></h5>
-                                <a href="#">November 25 2024.</a>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="hover-tab-link">
-                                <h5 class="mt-0 post_title"> <a href="https://www.bbsmituni.com/blog/10-useful-strategies-to-help-students-improve-their-creativity">10 Useful Strategies to Help Students Improve Their Creativity  </a></h5>
-                                <a href="#">November 22 2024.</a>
-                            </div>
-                        </div>
+                        
+                        @endforeach
+
                     </div>
                 </div>
             </div>

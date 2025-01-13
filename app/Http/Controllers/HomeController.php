@@ -18,6 +18,7 @@ class HomeController extends Controller
     public function contact(){
         return view('contact');
     }
+    
     public function about(){
         return view('about');
     }
@@ -29,10 +30,13 @@ class HomeController extends Controller
             $blogList = Blog::latest()->with('blogCategory')->get();
         }
         $blogCategory = BlogCategory::withcount('blogs')->limit(20)->get();
+        $ressentList = Blog::latest()->with('blogCategory')->limit(3)->get();
       
-        return view ('blog' ,compact('blogCategory','blogList'));
+        return view ('blog' ,compact('blogCategory','blogList','ressentList'));
     }
-    public function blogDetails(){
+    public function blogDetails($slug = null){
+
+        
         return view('blogDetails');
     }
 }

@@ -1,6 +1,6 @@
 
 
-
+{{-- 
 <div class="popup-overlay" id="popupOverlay"></div>
 
 <div class="popup popup_rs" id="popupBox">
@@ -45,7 +45,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 <style>
     .iso-certificate {
