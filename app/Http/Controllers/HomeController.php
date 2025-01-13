@@ -36,7 +36,12 @@ class HomeController extends Controller
     }
     public function blogDetails($slug = null){
 
-        
-        return view('blogDetails');
+        $blogData = Blog::with('blogCategory')->where('slug',$slug)->first();
+
+  	  $blogCategory = BlogCategory::withcount('blogs')->limit(6)->get();
+	    $ressentList = Blog::latest()->with('blogCategory')->limit(3)->get();
+
+     
+        return view('blogDetails',compact('blogData','blogCategory','ressentList'));
     }
 }

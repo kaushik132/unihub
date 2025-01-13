@@ -2170,7 +2170,7 @@
                                     <div class="user-blog-name">Unihub</div>
                                 </div>
                             </div>
-                            <a href="{{url('/')}}"
+                            <a href="{{url('blog-details/'.$blogs->slug)}}"
                                 class="blog_btn_go">
                                 <div class="mt-xl-5"><img src="https://www.bbsmituni.com/assets/images/Link.png"
                                         alt="link-icon" class="img-fluid"></div>
@@ -2191,7 +2191,7 @@
         <div class="col-md-12 pt-4">
 
 
-            <a href="https://www.bbsmituni.com/blogs">
+            <a href="{{url('blog')}}">
                 <div class="text-center"><button class="view-blog-button">View All Blogs</button></div>
             </a>
         </div>
