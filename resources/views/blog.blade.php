@@ -18,7 +18,7 @@
                     <div class="row">
 
 {{-- start blog --}}
-@foreach ($blog as $blogs)
+@foreach ($blogList as $blogs)
     
 
                         <div class="col-sm-6 col-lg-6 col-xl-6">
@@ -32,7 +32,7 @@
                                             <h2>{{ \Carbon\Carbon::parse($blogs->created_at)->format('d') }}</h2> <span>{{ \Carbon\Carbon::parse($blogs->created_at)->format('F') }}</span></div>
                                     </div>
                                 </a>
-                                <a href="#" class="hover-blog-title">
+                                <a href="{{url('blog-details/'.$blogs->slug)}}" class="hover-blog-title">
                                     <h4 class="hover-blog-title mt-2"><b>{{$blogs->title}}</b> </h4>
                                     <p>{{$blogs->short_des}}</p>
                                     <!-- </div> -->

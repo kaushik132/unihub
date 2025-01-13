@@ -52,8 +52,8 @@
     <div class="container">
         <div class="row pb-4">
             <div class="col-md-6 mt-4">
-                <form id="contact_form" method="post" action="https://www.bbsmituni.com/contacfromsubmit" style="background-color:white;padding:10px;box-shadow:2px 2px 40px 5px #E6EDFE;border-radius:10px;border:solid 1px #043BB3;">
-                    <input type="hidden" name="_token" value="u6KBCxUIGq0mHAJQLtr85AXp4H4Z586V8gaGxHsi">
+                <form id="contact_form"  action="" style="background-color:white;padding:10px;box-shadow:2px 2px 40px 5px #E6EDFE;border-radius:10px;border:solid 1px #043BB3;">
+                
                     <h5 style="font-size:25px;font-weight:500"><b>Send Message</b></h5>
                     <label for="contact_name" class="form-label"><b>Name</b></label>
                     <input type="text" class="form-control form-border shadow-sm" id="contact_name" name="contact_name" style="padding:8px"><br>
@@ -78,69 +78,8 @@
 </section>
 
 <!-- ------------------------------------------Contact us End------------------------------------------------------ -->
-<div class="popup-overlay" id="popupOverlay"></div>
-
-<div class="popup popup_rs" id="popupBox">
-
-    <div class="rs_popup_box">
-        <div class="row">
-            <div class="col-xl-12">
-                <form id="rscit_form" action="https://www.bbsmituni.com/rscitfromsubmit" method="POST">
-                    <input type="hidden" name="_token" value="PvOzviKyeewRsBDUBOkGxtKoHfZn1kNQCZ8V2w2C">
-                    <div class="rs_popup_inner">
-                        <span class="close_rs" id="close_rs">x</span>
-                        <img src="assets/images/uhublogo.png" alt="">
-                        <h5>RS-CIT Course Enrollment Form </h5>
-
-                        <div class="form_box">
-                            <label for="name">Name</label>
-                            <input name="name" id="name" type="text" placeholder="Full Name"
-                                oninput="this.value = this.value.replace(/[^A-Za-z+.]/g, '').replace(/(\..*?)\..*/g, '$1');">
-                        </div>
-
-                        <div class="form_box">
-                            <label for="email">Email Id</label>
-                            <input name="email" id="email" type="email" placeholder="Email Id">
-                        </div>
-
-                        <div class="form_box">
-                            <label for="number">Contact Number</label>
-                            <input name="number" id="number" type="text" maxlength="10" placeholder="Number"
-                                oninput="this.value = this.value.replace(/[^0-9+.]/g, '').replace(/(\..*?)\..*/g, '$1');">
-                        </div>
-                        <div class="form_box">
-                            <label for="message">Message</label>
-                            <textarea name="message" row="10" id="message"></textarea>
-                        </div>
-                        <div class="form_box pt-3 text-start">
-                            <button class="btn" style="background-color: #273291;color:#fff !important"
-                                type="submit">Submit</button>
-                        </div>
-
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<style>
-    .iso-certificate {
-        width: 100%;
-        max-width: 100px;
-        border-radius: 10px;
-        border: solid 1px #FFDD00;
-        background-color: #fff;
-        padding: 5px
-    }
-</style>
 
 
-<div class="g-review-fixed" id="review-fixed">
-    <a href="https://maps.app.goo.gl/CcX1TaUhrYZnJTCz7" target="_blank">
-        <img src="https://www.bbsmituni.com/images/google-review.png" alt="google review">
-    </a>
-</div>
 
 
 
