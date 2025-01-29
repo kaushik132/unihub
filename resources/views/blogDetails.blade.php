@@ -13,7 +13,7 @@
 <div class="p-4">
     <ol class="d-flex" style="list-style:none">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Blog detail/8 Easy Ways to Become Excellent at Spoken English</li>
+        <li class="breadcrumb-item active" aria-current="page">Blog detail/{{$blogData->title}}</li>
     </ol>
 </div>
 
@@ -31,7 +31,7 @@
                                 <h2>30</h2> <span>November</span></div>
                         </div>
                         <div class="details blog-main-details">
-                            <h1>8 Easy Ways to Become Excellent at Spoken English</h1>
+                            <h1>{{$blogData->title}}</h1>
 
                             <ul class="post_meta">
                                 <li class="list-text"><a href="#"><i class="fa-solid fa-user"></i> BBSMIT</a></li>
@@ -41,101 +41,9 @@
                             <div class="blog-list-dotsvw">
                                 <h2><strong>Introduction</strong></h2>
 
-                                <p>Taking spoken English is a skill that can help you in many ways in life. It is useful whether you want to communicate better in your academic work, increase your chances of getting a job, or interact with people from
-                                    different parts of the world. It is quite common to be a little shy or even frightened while speaking English if the language is not the first one learned. But it is a myth and anyone can work on his spoken English
-                                    if the approach is correct. In this blog, 8 easy techniques that can help one in achieving excellence in spoken English are going to be discussed here. The following tips on how to speak well and how to master a
-                                    language with ease can prove to be very very useful.</p>
+                                <p>{!!$blogData->content!!}</p>
 
-                                <h2><strong>&nbsp; &nbsp;1. Practice Regularly with Native Speakers</strong></h2>
-
-                                <p>This is a very easy method for spoken improvement. Native speakers help improve knowledge of pronunciation, sentence construction, and even more essential real-life use. Frequently conversing with native speakers exposes
-                                    you to ordinary use, slang, and informally used language that they practice in everyday conversation.</p>
-
-                                <p>You can practice conversation with the people around you or look for online language exchange programs. There are some websites and apps where one can get connected with native English speakers to hone conversation.
-                                    Your English vocabulary will become more natural the more you talk. You will also have more comfort and confidence while doing the exercise regularly.</p>
-
-                                <p><strong>Tip:</strong> Don&#39;t be afraid of your mistakes. Native speakers usually like that you are practicing, and they will not mind correcting you either.</p>
-
-                                <h2 style="font-style:normal"><strong>&nbsp; &nbsp;2. Expand Your Vocabulary</strong></h2>
-
-                                <p>Speaking English fluently requires a large vocabulary. The more words you know, the easier it will be for you to express yourself in different situations. Expanding your vocabulary doesn&#39;t mean memorizing difficult
-                                    words; instead, it means learning new words every day and understanding their meanings in different contexts.</p>
-
-                                <p>There are many easy ways to expand your vocabulary. For instance, you can read books, newspapers, and online articles in English. New words should be noted, used in sentences, and paid attention to. Flashcards are another
-                                    great tool for remembering new words. You can also use vocabulary apps to practice on the go.</p>
-
-                                <p><strong>Tip:</strong> Learn words that fit your interest. The process of memorizing words regarding things you are interested in makes it easy to remember them and use them appropriately in conversation.</p>
-
-                                <h2 style="font-style:normal"><strong>&nbsp; &nbsp;3. Watch Movies and TV Shows in English</strong></h2>
-
-                                <p>Watching movies and TV shows in English is one of the most entertaining ways to practice your spoken English. You not only get to hear native speakers using the language in everyday situations but also learn how to
-                                    converse in a flow and rhythm that is more natural. Watching English-language content helps you improve your listening skills, vocabulary, and understanding of different accents.</p>
-
-                                <p>Make an effort to watch TV series or films with English subtitles. This way, you can read the text while hearing the pronunciation. That will help you to associate written and spoken words. You can also pause scenes
-                                    to replay them and hear what was said.</p>
-
-                                <p><strong>Tip:</strong> Select topics that you would be interested in. If it is a comedy, drama, or documentary - since you will enjoy it, learning will be even easier and less stressful.</p>
-
-                                <h2 style="font-style:normal"><strong>&nbsp; &nbsp;4. Listen to Podcasts and Audiobooks</strong></h2>
-
-                                <p>Listening to podcasts and audiobooks in the English language is another easier way to enhance your speaking skills in the English language. One of the great things about podcasts is that they cover any topic from news,
-                                    entertainment, and development. With an audiobook, you get to listen to stories and narrations at the same time while paying attention to pronunciation and pacing.</p>
-
-                                <p>Through constant listening to podcasts and audiobooks, you are able to hone your listening skills and familiarize yourself with accents and speaking styles. Active listening to the pronunciation, stressing, and intonation
-                                    of words helps to speak clearly and confidently.</p>
-
-                                <p><strong>Tip: </strong>Start with podcasts and audiobooks designed for learners of English. The more you advance, you will hear more serious listening material.</p>
-
-                                <h2 style="font-style:normal"><strong>&nbsp; &nbsp;5. Focus on Pronunciation and Intonation</strong></h2>
-
-                                <p>Pronunciation and intonation are the two most important elements of spoken English. Pronouncing words correctly guarantees that others can understand you. Proper intonation helps you convey meaning and emotion, which
-                                    is often overlooked by students who focus on grammar and vocabulary.</p>
-
-                                <p>One of the ways to do this easily is by imitation. One could listen to how native speakers pronounce their words and try to sound like them. Practice some hard words, which would sometimes be quite difficult. Utilize
-                                    some apps or videos on the internet that help practice pronunciation improvement. Pay attention to word stress and sentence rhythm when speaking in order to have a natural flow of sound.</p>
-
-                                <p><strong>Tip: </strong>Practice speaking aloud and recording yourself. This will enable you to hear your pronunciation and track your progress.</p>
-
-                                <h2 style="font-style:normal"><strong>&nbsp; &nbsp;6. Engage in Public Speaking or Group Discussions</strong></h2>
-
-                                <p>Public speaking or holding group discussions is an extremely easy way to enhance your spoken English. When you are talking in front of people or participating in group conversations, then you are compelled to think
-                                    on your feet and converse more fluently. Through public speaking, you get confidence in using the English language in real-life scenarios.</p>
-
-                                <p>Joining groups like debate teams, book clubs, or discussion groups is a very good practice. You could also join online forums or video calls where you can converse on different topics in English. Speaking before others
-                                    helps improve fluency, expand vocabulary, and also enhance your communication skills altogether.</p>
-
-                                <p><strong>Tip:</strong> Begin by speaking before a few close friends and family members, then scale up to bigger audiences from there.</p>
-
-                                <h2 style="font-style:normal"><strong>&nbsp; &nbsp;7. Learn the Grammar but Don&rsquo;t Overthink It</strong></h2>
-
-                                <p>Grammar is an important concept that should teach you how the English language works. Unfortunately, most learners are overly fixated on grammar at a time when they should be speaking. Yes, one needs to know some of
-                                    the basic grammar rules; however, don&#39;t let this stop you from speaking.</p>
-
-                                <p>Remember that fluency in spoken English is all about practising communication rather than achieving perfection. You are bound to commit some errors and that&#39;s fine. Instead, focus on delivering your message rather
-                                    than agonizing over every minor mistake. Grammar will correct itself with the practice of speaking.</p>
-
-                                <p><strong>Tip:</strong> If you don&#39;t know a grammar rule, don&#39;t worry. Look it up when you get the chance, but don&#39;t let it stop you from speaking.</p>
-
-                                <h2 style="font-style:normal"><strong>&nbsp; &nbsp;8. Keep a Journal and Speak Aloud</strong></h2>
-
-                                <p>Writing and speaking aloud are a couple of the great easy ways to improve your spoken English. Keeping a daily journal helps you think in the medium, which also assists with forming sentences. When something is written
-                                    down, be sure to read it back out loud to continue developing speaking skills. In reading, you will realize more areas that need improvement in your speech.</p>
-
-                                <p>You can begin writing simple sentences about your day, thoughts, or what you have learned. After that, practice your pronunciation and fluency by reading aloud from your journal entries. This practice will give you
-                                    the confidence to be more comfortable speaking English.</p>
-
-                                <p><strong>Tip:</strong> Try to speak the maximum amount in English to yourselves. Talk about what you are doing throughout the day, even something as simple as cooking or just taking a walk.</p>
-
-                                <h2><strong>Conclusion</strong></h2>
-
-                                <p>It is not as impossible to become excellent at spoken English as most people think it is. That is why I have to say that it is rather simple to enhance your spoken English, in case you spend a sufficient amount of time
-                                    on the lessons, expand your vocabulary, pay attention to pronunciation, and try to interact with other people. The thing is that it needs time and daily share.&rdquo; As with all techniques of learning, the following
-                                    8 ways present here, will eventually assist in making you a more confident and fluent speaking English person. Please bear in mind that every single move is a move towards getting that goal done, so keep on practising
-                                    and keep on being positive.</p>
-
-                                <p>If you desire to have a noble institution help you in enhancing your skills on how to express yourself in English then BBSMIT is a good one for you. Here, BBSMIT seeks to develop all students with the aim of producing
-                                    professional career people who can converse in English fluently. If you will try to fix these factors and try to set time for English whenever possible then you will witness improvement soon. All the best and do
-                                    not stop speaking!</p>
+                                
                             </div>
 
 

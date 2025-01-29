@@ -34,6 +34,17 @@ class HomeController extends Controller
       
         return view ('blog' ,compact('blogCategory','blogList','ressentList'));
     }
+
+public function course(){
+        return view('course');
+    }
+
+
+    public function courseDetails(){
+        return view('courseDetails');
+    }
+
+
     public function blogDetails($slug = null){
 
         $blogData = Blog::with('blogCategory')->where('slug',$slug)->first();
